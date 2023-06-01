@@ -1,0 +1,29 @@
+<div
+  class="chat-container"
+  [ngClass]="{ 'slide-out': !isChatVisible, 'slide-in': isChatVisible }"
+>
+  <div class="header">
+    <h1>Chat Global</h1>
+    <div
+      [ngClass]="{
+        'slide-out-button': !isChatVisible,
+        'slide-in-button': isChatVisible
+      }"
+      (click)="hideChat()"
+    >
+      <span>
+        <img src="../../../../assets/img/chatLogo.png" alt="" width="70px" />
+      </span>
+    </div>
+    
+  </div>
+  <div class="mensaje-container">
+    <div *ngFor="let message of messages">
+      <p>{{ message }}</p>
+    </div>
+  </div>
+  <div class="row base">
+    <input [(ngModel)]="newMessage" placeholder="Escribe un mensaje" />
+    <button (click)="sendMessage()">Enviar</button>
+  </div>
+</div>

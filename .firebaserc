@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sala-de-juegos-c9447"
+  },
+  "targets": {
+    "sala-de-juegos-c9447": {
+      "hosting": {
+        "sala-de-juegos": [
+          "sala-de-juegos-c9447"
+        ]
+      }
+    }
+  }
+}

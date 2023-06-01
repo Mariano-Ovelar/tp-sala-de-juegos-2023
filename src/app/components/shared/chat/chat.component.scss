@@ -1,0 +1,100 @@
+.chat-container {
+  position: fixed;
+  bottom: 5px;
+  right: 3px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+.mensaje-container {
+  width: 350px;
+  height: 400px;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  margin: 0px 0 10px 0;
+}
+input {
+  width: 70%;
+  margin-left: 10px;
+}
+button {
+  width: 25%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.slide-out {
+  transform: translateY(88%);
+  -webkit-transform: translateY(88%);
+  -moz-transform: translateY(88%);
+  -ms-transform: translateY(88%);
+  -o-transform: translateY(88%);
+}
+
+.slide-in {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(249, 178, 11);
+}
+.slide-out-button {
+
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: transform 1s ease-in-out;
+}
+
+.slide-in-button {
+  transition: transform 1s ease-in-out;
+  -webkit-transition: transform 1s ease-in-out;
+  -moz-transition: transform 1s ease-in-out;
+  -ms-transition: transform 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
+}
+img {
+  margin: 0;
+  padding: 0;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+}
+h1 {
+  margin-left: 10px;
+}
+.base {
+  margin-bottom: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
