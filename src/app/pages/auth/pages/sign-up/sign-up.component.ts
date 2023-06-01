@@ -43,7 +43,7 @@ export class SignUpComponent {
           uid: resUsuario.user.uid,
           name: resUsuario.user.displayName,
           email: resUsuario.user.email,
-          rol: 'empleado',
+          rol: 'jugardor',
         };
 
         this.userSrv.guardar(user);

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ChatComponent {
   messages: string[] = [];
   newMessage: string="";
-  isChatVisible: boolean = true;
+  isChatVisible: boolean = false;
 
   hideChat() {
     this.isChatVisible = !this.isChatVisible;
