@@ -24,6 +24,7 @@ const routes: Routes = [
       import('./pages/auth/auth.module').then((m) => m.AuthModule),
     canActivate: [NoLogueadoGuard],
   },
+  { path: 'juegos', loadChildren: () => import('./pages/juegos/juegos.module').then(m => m.JuegosModule) },
   {
     path: '**',
     redirectTo: '404',

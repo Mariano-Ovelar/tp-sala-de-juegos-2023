@@ -22,8 +22,7 @@ export class FirestoreService {
 
     // Actualizar el campo 'id' del objeto guardado
     const actorDocRef = doc(col, docRef.id);
-    await setDoc(actorDocRef, { ...obj, id }).then(()=>{
-    });
+    await setDoc(actorDocRef, { ...obj, id }).then(() => {});
   }
   async traer(coleccion: string) {
     const col = collection(this.firestore, coleccion);
@@ -39,7 +38,6 @@ export class FirestoreService {
 
     // Actualizar el documento con los datos del contenedor modificado
     setDoc(docRef, objModificado, { merge: true });
-
   }
   async eliminar(obj: any, coleccion: string) {
     this.modificar(obj, { docActivo: false }, coleccion);

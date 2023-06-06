@@ -1,0 +1,11 @@
+<div class="ahorcado">
+    <h1>Ahorcado</h1>
+    <div  #ahorcado id="ahorcado"></div>
+    <p>Palabra oculta: {{ palabraOculta }}</p>
+    <p>Palabra mostrada: {{ palabraMostrada }}</p>
+    <p>contador incorrectas: {{ contadorIncorrectas }}</p>
+    
+  </div>
+  
+  <app-letras [juegoTerminado]="juegoTerminado" (letraSeleccionada)="letraSeleccionada($event)"></app-letras>
+  

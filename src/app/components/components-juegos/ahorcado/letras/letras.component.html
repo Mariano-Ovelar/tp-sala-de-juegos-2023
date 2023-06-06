@@ -1,0 +1,9 @@
+<div class="letras">
+  <button
+    *ngFor="let boton of botons"
+    (click)="seleccionarLetraBoton(boton)"
+    [disabled]="boton.bloquearBoton"
+  >
+    {{ boton.letra }}
+  </button>
+</div>

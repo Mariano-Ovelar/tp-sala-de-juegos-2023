@@ -1,6 +1,7 @@
 <div
   class="chat-container"
   [ngClass]="{ 'slide-out': !isChatVisible, 'slide-in': isChatVisible }"
+  *ngIf="user"
 >
   <div class="header">
     <h1>Chat Global</h1>
@@ -15,15 +16,30 @@
         <img src="../../../../assets/img/chatLogo.png" alt="" width="70px" />
       </span>
     </div>
-    
   </div>
-  <div class="mensaje-container">
-    <div *ngFor="let message of messages">
-      <p>{{ message }}</p>
+  <div #messagesBox class="mensaje-container scroll-window">
+    <div *ngFor="let message of messages" class="mensaje">
+      <div
+        [ngClass]="{
+          'message-bubble': true,
+          'isUser': message.user?.email === user.email,
+        }"
+      >
+        <p class="userName">
+          <b>
+            {{ message.user?.name }}
+          </b>
+        </p>
+        <p>
+          {{ message.message }}
+        </p>
+        <p class="time">{{ message.hora }}</p>
+      </div>
     </div>
   </div>
-  <div class="row base">
-    <input [(ngModel)]="newMessage" placeholder="Escribe un mensaje" />
-    <button (click)="sendMessage()">Enviar</button>
-  </div>
+   <div class="row base">
+    <input [(ngModel)]="newMessage" (keyup.enter)="onSubmit()" placeholder="Escribe un mensaje" />
+    <button (click)="onSubmit()">Enviar</button>
+  </div> 
+
 </div>

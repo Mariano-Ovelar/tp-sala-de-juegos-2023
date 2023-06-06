@@ -1,0 +1,46 @@
+.word {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .attempts {
+    margin-bottom: 1rem;
+  }
+  
+  .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  button {
+    padding: 0.5rem;
+  }
+  
+  .result {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .win {
+    color: green;
+  }
+  
+  .lose {
+    color: red;
+  }
+
+  #ahorcado{
+    height: 200px;
+    width: 200px;
+    left: 0;
+    background-image: url("../../../../../assets/img/el-ahorcado.jpg");
+    border-radius: 2em;
+    margin-top: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}

@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { JuegosListaComponent } from './juegos-lista/juegos-lista.component';
+import { RouterModule } from '@angular/router';
+import { LetrasComponent } from './ahorcado/letras/letras.component';
 
 
 
 @NgModule({
   declarations: [
-    JuegosListaComponent
+    JuegosListaComponent,
+    LetrasComponent,
   ],
   exports:[
-    JuegosListaComponent
+    JuegosListaComponent,
+    LetrasComponent,
+
+
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class ComponentsJuegosModule { }

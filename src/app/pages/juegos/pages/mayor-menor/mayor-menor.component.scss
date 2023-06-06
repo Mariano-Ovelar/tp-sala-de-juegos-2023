@@ -1,0 +1,29 @@
+img {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contenedor-cartas {
+  background-image: url("../../../../../assets/img/cartas/tapete2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+  width: 800px;
+  height: 470px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.info {
+  width: 800px;
+  height: 450px;
+  margin: 10px;
+}
+button {
+  width: 100%;
+  margin: 10px 0;
+}
